@@ -1,0 +1,44 @@
+TDTS04 - 2017-01-26 - BL33 - 10:15-12:00 - Jonas Wallgren
+
+SPRÅK!
+
+Källkod: (if x = 4711)
+    |
+Lexikalisk   | 
+  analys     |- Reguljära Uttryck [del av RDPARSE] <- OBS!
+ (Scanner)   | 
+    |
+  Token   ( (if) (x) (==) (4711) )
+    |
+Syntaktisk   |
+  analys     |- Grammatik (BNF) [del av RDPARSE]
+  Parser     |
+    |
+Trädstruktur
+ ___|_________________
+/                     \
+|                     |
+Traversering/    Traversering
+Evaluering/      Kodgenering
+Exekvering            |
+                  Assembler/
+                  Maskinkod
+                  
+
+________________________________________________________________________
+
+BNF     [Backus Normal Form 
+         Backus Now Form]
+         Hel -> del del del
+         hel ::= del del del
+         Uttryck ::= Tal
+         Uttryck ::= Uttryck plus uttryck
+         <uttryck> ::= <tal>
+         <uttryck> ::= <uttryck> + <uttryck>
+             |                   |
+         icketermainal        terminal
+
+E = expression          E -> N; E -> E+E; E <- E+E;
+N = number                           E -> E*E; E -> V;
+V = Value                    
+Kolla Backus Now

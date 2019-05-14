@@ -1,0 +1,89 @@
+
+print 'While test!';
+
+w = 0;
+
+while w not equals 10
+{
+    print w;
+    increase w;
+};
+
+
+print 'If-test: Booleans';
+
+set he to 'hej';
+
+if he not equals 'yo'
+{
+	print 'yo, not true';
+};
+
+if he equals 'hej'
+{
+	print 'hej, true';
+};
+
+
+print 'if-test: Numerics';
+
+set a to 1;
+
+if a equals 1
+{
+	print 'number works too';
+	set a to 2;
+};
+
+if a equals 2
+{
+	print 'I can even assign outside!';
+};
+
+if a equals 3
+{
+	print 'shouldnt work';
+};
+
+
+print 'for-test';
+
+set ftest to 0;
+
+for ftest not equals 10
+{
+	print 'loop';
+};
+
+print ftest;
+
+for ftest lesser or equal to 20
+{ 
+	print ftest;
+};
+
+
+print 'Equation-test';
+
+set c to equation((3+2)*5);
+print c;
+
+
+print 'function-test!';
+
+set ab to 2;
+
+create function test(abf)
+{
+  print abf;
+  if abf equals 2 
+  {
+    set abf to 5;
+    call function test(abf); #recursive works?
+  };
+};
+
+call function test(ab);
+
+set ret to 10;
+return ret;

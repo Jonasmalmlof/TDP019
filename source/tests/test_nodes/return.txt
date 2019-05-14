@@ -1,0 +1,2 @@
+set a to 10;
+return a;

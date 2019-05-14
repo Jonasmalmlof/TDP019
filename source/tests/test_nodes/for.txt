@@ -1,0 +1,13 @@
+set ftest to 0;
+
+for ftest not equals 10
+{
+	print ftest;
+};
+
+print ftest;
+
+for ftest lesser or equal to 20
+{ 
+	print ftest;
+}

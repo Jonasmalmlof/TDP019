@@ -1,0 +1,30 @@
+set a to 'hej';
+
+if a not equals 'yo'
+{
+	print 'true';
+};
+
+if a equals 'hej'
+{
+	print 'hej';
+};
+
+
+set a to 1;
+
+if a equals 1
+{
+	print 'number works too';
+	set a to 2;
+};
+
+if a equals 2
+{
+	print 'I can even assign outside!';
+};
+
+if a equals 3
+{
+	print 'shouldnt work';
+};

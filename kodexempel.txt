@@ -1,0 +1,86 @@
+2017-02-13 _ TDTS04 _ jonma993 & denbl369
+__________________________________________
+
+The language is written in clear text that is easy for a beginner to understand and use to learn the basics of programming structure.
+Equations are written as one normally would, except with the prefix: equation().
+
+any words written inside < and > are placeholders and can be replaced with whatever the user wishes.
+
+Target audience:        Beginners.
+Structure:              Imperative
+                        Procedural.
+
+Kodexempel:
+
+create program
+
+  #create a function
+  create function "<name>(<variable0>, <variable1>)"
+    if <variable0> is string
+      exit function
+    end if
+    return <variable0> + <variable1>
+  end function "<name>"
+
+  #call a function
+  call function "<name>"
+
+  #create a variable
+  create variable/<type> "<name>"
+
+  create variable/int digit
+  create variable/string "string"
+
+  #setting a variable to a number
+  set "digit" to 5
+
+  #adding to a int
+  add 7 to "digit"
+
+  #multiplying a int
+  multiply "digit" by 5
+  multiply 5 by "digit"
+
+  #substract a int
+  subtract 5 from "digit"
+
+  #set a variable to be the result of an equation.
+  set "digit" to equation((5+3)x7)
+
+  #setting a variable to a string
+  set "string" to 'this is a string'
+
+  #syntax of an if-statement.
+  #if else
+    #if "<variable>" is <statement> then
+      #<statements>
+    #else
+      #<statements>
+  #end if
+
+  if "digit" is equal to 7 then
+    loop until "digit" equals 10
+      add 1 to "digit"
+    end loop
+    else if "digit" is greater than 10 then
+      loop until "digit" equals 10
+      subtract 1 from "digit"
+    end loop
+  end if
+
+  #printing statements
+  print "<text>" -> print 'hello world'
+  print digit
+
+  #request input from user. 
+  #strings need quotation-marks.
+  #digits do not.
+  request "<variable/string>"
+  request <variable/digit>
+
+
+end program
+
+
+
+

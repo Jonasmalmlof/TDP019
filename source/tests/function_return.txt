@@ -1,0 +1,14 @@
+create function testt(a)
+{
+  if a equals 1
+  {
+  	return 1;
+  };
+  
+  return 0;
+};
+
+set a to 1;
+
+call function testt(a);
+

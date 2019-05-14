@@ -1,0 +1,77 @@
+TDTS04 2017-02-02 Devblog
+Jonas Malmlöf (jonma993)
+Denis Ivan Blazevic (denbl369)
+
+
+The language is written in clear text that is easy for a beginner to understand and use to learn the basics of programming structure.
+Equations are written as one normally would, except with the prefix: equation().
+
+any words written inside < and > are placeholders and can be replaced with whatever the user wishes.
+
+Target audience:        Beginners.
+Structure:              Imperative,
+                        Procedural.
+
+
+_______ Code example: ________________________
+
+create program
+
+  #create a function
+  create function "<name>"
+    return “<returned_variable>”
+  end function "<name>"
+
+  #call a function
+  #automatically creates a variable “<returned_variable>” that is used.
+  #without needing to do: “<variable>” = call function “<name>”
+  call function "<name>"
+
+  #create a variable
+  create variable/<type> "<name>"
+
+  create variable/int "digit"
+  create variable/string "string"
+
+  #setting a variable to a number
+  set digit to 5
+
+  #adding to an int
+  add 7 to "digit"
+
+  #multiplying an int
+  multiply "digit" by 5
+  multiply 5 by "digit"
+
+  #substract from an int
+  subtract 5 from "digit"
+
+  #setting a variable to be equal to an equation
+  set "digit" to equation((5+3) x 7)
+
+  #setting a variable to a string
+  set "string" to 'this is a string'
+
+  #if else-statement
+  #if "<variable>" is <statement> then
+    #<blabla>
+  #else
+    #<blabla>
+  #end if
+
+
+  if "digit" is equal to 7 then
+    loop until "digit" is equal to 10
+      add 1 to "digit"
+    end loop
+  else if "digit" is greater than 10 then
+    loop until "digit" is greater than 10
+      subtract 1 from "digit"
+    end loop
+  end if
+
+  #printing statements
+  print '<text>' -> print 'hello world'
+  print "digit"
+
+end program

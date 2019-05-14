@@ -1,0 +1,12 @@
+set a to true;
+set c to false;
+
+if a equals true
+{
+  print 'a equals true!';
+};
+
+if c not equals true
+{
+  print 'c not equals true!';
+};

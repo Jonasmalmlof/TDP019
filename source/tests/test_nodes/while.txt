@@ -1,0 +1,7 @@
+s = 0;
+
+while s not equals 10
+{
+    print s;
+    increase s;
+};

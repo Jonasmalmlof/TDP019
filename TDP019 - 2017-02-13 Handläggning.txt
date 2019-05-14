@@ -1,0 +1,31 @@
+TDP019 - 2017-02-13 Handläggning.
+_________________________________
+
+Stängt Scope?
+eller Lexikaliskt eller Dynamiskt.
+
+IF-Klasser:
+Noder är enklare/snabbare
+
+Illegal variable-name.
+
+om 2 veckor ska BNF *nästan* vara klar.
+
+Request int "<variable>"
+
+
+Kodexempel som ger huvudvärk, Re: Scope.
+
+x=10
+func f()
+  print x
+func g()
+  x=5
+  f()
+g()
+
+vad visas beror på hur Scopes fungerar.
+
+Ser f() vad som hände x i g()? eller tittar den bara upp ett steg och ser x=10?
+Inte ett problem om man skickar med x i functions-anroppet.
+

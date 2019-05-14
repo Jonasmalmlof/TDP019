@@ -1,0 +1,7 @@
+set c to equation((3+2)*5);
+
+print c;
+
+set d to equation(5**5);
+
+print d;

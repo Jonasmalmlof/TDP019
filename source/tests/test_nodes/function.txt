@@ -1,0 +1,21 @@
+set ab to 2;
+
+create function test(abf)
+{
+  print abf;
+  if abf equals 2 
+  {
+    set abf to 5;
+    call function test(abf); #recursive works?
+  };
+};
+
+call function test(ab);
+
+set a to 3;
+create function testb()
+{
+  return 3;
+};
+set x to call function testb();
+print x;
